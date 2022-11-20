@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hal</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #f3f3f3;;
+            margin-top: 0;
+        }
+
+        h1{
+            color: white;
+            padding: 0px 0 10px 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-shadow: 1px 1px 2px whitesmoke;
+        }
+
+        .container{
+            width: 75%;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px 10px 60px ;
+
+        }
+        nav{
+            background-color: #FA320A;
+            width: 75%;
+            margin: auto;
+            padding: 0 10px 10px;
+        }
+        a{
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px 10px 5px;
+            font-weight: 550;
+            margin-left: 5px;
+            text-shadow: 1px 1px 2px whitesmoke;
+
+        }
+        a:hover{
+            background-color: #fff;
+            color: black;
+            border-radius: 10px;
+            text-shadow: 1px 1px 2px #888888;
+
+        }
+
+        h2,b{
+            text-shadow: 1px 1px 2px #888888;
+        }
+        
+        h2{
+            text-decoration: underline red;
+            margin-bottom: 25px;
+        }
+        h2:nth-child(1){
+            margin-top: 0;
+        }
+
+        p{
+            padding: 0 20px;
+            margin-bottom: 30px;
+        }
+        
+        ul{
+            margin-bottom: 50px;
+            list-style: none;
+            padding: 0 20px;
+        }
+
+        .actor1{
+            color: #e94d50;
+        }
+
+        .actor2{
+            color: rgb(253, 109, 241);
+        }
+
+        .actor3{
+            color: rgb(190, 231, 108);
+        }
+
+        nav ul{
+            display: flex;
+            margin-bottom: 20px;
+            padding-top: 10px;
+        }
+
+        .video{
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .translation{
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .flag {
+            height: 30px;
+            width: 30px;
+            position: relative;
+            top: 5px;
+        }
+
+        
+        .movieInfo{
+            text-align: center;
+        }
+
+        .movieInfo_black{
+            color: #8c0406;
+            font-weight: bolder;
+        }
+        
+        .bold{
+            font-weight: bolder;
+        }
+        
+        .inline{
+            display: inline-block;
+            text-align: start;
+        }
+
+        .movieInfo p{
+            margin: 13px 0;
+        }
+
+        hr{
+            margin: 20px 0;
+        }
+
+        .male::before{
+            font-family: FontAwesome;
+            content: "\f222";
+            margin-right: 10px;
+            color: rgb(100, 100, 230);
+            font-weight: bolder;
+        }
+
+        .female::before{
+            font-family: FontAwesome;
+            content: "\f221";
+            margin-right: 10px;
+            color: rgb(218, 100, 168);
+            font-weight: bolder;
+        }
+
+        .center{
+            text-align: center;
+        }
+       
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="navbarItem"><a href="./../index.html"><i class="fa-solid fa-house"></i> Domov</a></li>
+            <li class="navbarItem"><a href="./ranking.html"><i class="fa-solid fa-stairs"></i> Rebríček</a></li>
+            <li class="navbarItem"><a href="./add-review.html"><i class="fa-solid fa-pen"></i> Pridať recenziu</a></li>
+        </ul>
+        <header>
+            <h1 style="text-align: center;">Hal</h1>
+            <h3 class="translation"><img class="flag" src="./../images/japan.png" alt="">  ハル</h3>
+        </header>
+    </nav>
+    
+    <div class="container">
+        <article>
+            <h2 style="text-align: center;"><i class="fa-solid fa-video"></i> Obsah filmu</h2>
+            <p>Po náhlej smrti svojho priateľa <b>Hala</b> pri tragickej leteckej nehode prichádza <b>Kurumi</b> o všetko. Jej srdce je zlomené. Je nútená pokračovať v živote bez svojho milovaného a upadá do samotárskej a smutnej existencie. Geniálny vedec však vymyslel plán, ako Kurumi priviesť späť k normálnemu životu. Pomocou futuristickej technológie s binárnym ekvivalentom ľudských emócií vytvára <b>ultra-realistického robotického náhradníka,</b> ktorý má zaujať Halovo miesto a vyslobodiť Kurumi z večnej samoty. Spočiatku odolná a zlomená, no stále krásna Kurumi pomaly podlieha svojím túžbam a nachádza útechu v spoločnosti robota. Hoci ich jedinečné puto silnie každým ďalším dňom, Kurumi a Hal čoskoro zistia, že ich umelý milostný príbeh je <b>celkom iný, ako sa spočiatku zdalo.</b></p>
+        </article>
+        <hr>
+
+        <section class="movieInfo">
+            <h2><i class="fa-solid fa-film"></i> Informácie o filme</h2>
+            <p class="bold">Animovaný / Romantický / Sci-Fi
+                Japonsko, 2013, 60 min</p>
+            <div class="inline">
+            <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i> Režie:</span> Rjótaró Makihara, Kóiči Hacumi</p>
+            <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i>  Scénář</span>:  Izumi Kizara</p>
+            <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i>  Kamera</span>:  Kódži Tanaka</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 style="text-align: center;">Herci</h2>
+
+            <div class="center">
+                <div class="inline">
+                    <ul>
+                            <li class="actor1 male"><i class="fa-solid fa-masks-theater"></i>  Mamoru Mijano</li>
+                            <li class="actor2 female"><i class="fa-solid fa-masks-theater"></i> Šinpači Cudži</li>
+                            <li class="actor3 female"><i class="fa-solid fa-masks-theater"></i> Jóko Hikasa</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+        
+        </section>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OS43cCcWU0A" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <figure class="video">
+            <svg height="500" width="170">
+                <!-- neck-->
+                <polygon points="41,120 44,129 41,149 99,149 96,129 99,120" style="fill:#fae2c5;stroke:rgb(0, 0, 0);stroke-width:1" />
+                <!-- Head-->
+                <circle cx="70" cy="70" r="60" stroke="black" stroke-width="3" fill="#fae2c5" />
+                <!-- Eyes-->
+                <circle cx="50" cy="60" r="10" stroke="black" stroke-width="2" fill="lightblue" />
+                <circle cx="90" cy="60" r="10" stroke="black" stroke-width="2" fill="lightblue" />
+
+                <circle cx="90" cy="60" r="2" stroke="black" stroke-width="3" fill="black" />
+                <circle cx="50" cy="60" r="2" stroke="black" stroke-width="3" fill="black" />
+
+                <circle cx="47" cy="58" r="0.5" stroke="white" stroke-width="2" fill="white" />
+                <circle cx="87" cy="58" r="0.5" stroke="white" stroke-width="2" fill="white" />
+                <!-- brows-->
+                <polyline points="37,49 38,46 54,44 60,45" style="fill:#d3bea7;stroke:black;stroke-width:2" />
+
+                <polyline points="80,45 86,44 102,46 103,49" style="fill:#d3bea7;stroke:black;stroke-width:2" />
+                <!-- nose-->
+                <polyline points="64,85 67,90 71,90 74,85" style="fill:#d3bea7;stroke:rgb(0, 0, 0);stroke-width:1.5" />
+                <polyline points="64,79 65,76 67,70 65,65" style="fill:#d3bea7;stroke:rgb(0, 0, 0);stroke-width:1" />
+                <!-- mouth-->
+                <polygon points="50,102 60,107 70,109 80,107 90,102" style="fill:#f7a782;stroke:rgb(0, 0, 0);stroke-width:1" />
+                <!-- hair-->
+                <polygon points="70,7 58,8 50,12 38,16 30,19 20,29 15,35 14,45 10,55 8,68 6,80 10,75 13,70 18,60 20,75 35,50 50,40 60,35 68,70 75,35 80,30 100,45 105,60 110,45 115,80 120,60 128,85 130,80 135,60 132,50 130,40 125,35 118,28 109,20 100,12 80,9 70,5" style="fill:#5e3f18;stroke:rgb(0, 0, 0);stroke-width:1.5" />
+                <!-- clothes-->
+                <polygon points="0,149 140,149 135,250 140,300 50,300" style="fill:#acd9f7;stroke:rgb(0, 0, 0);stroke-width:1" />
+                <polygon points="0,149 5,250 0,300 130,300" style="fill:#82c8f7;stroke:rgb(0, 0, 0);stroke-width:1" />
+
+                <rect x="5" y="300" width="40" height="170" style="fill:rgb(114, 146, 63);stroke-width:3;stroke:#475e24" />
+                <rect x="95" y="300" width="40" height="170" style="fill:#72923f;stroke-width:3;stroke:#475e24"/> 
+
+                <ellipse cx="25" cy="480" rx="30" ry="20" style="fill:rgb(165, 127, 23);stroke:rgb(114, 88, 4);stroke-width:2" />
+                <ellipse cx="120" cy="480" rx="30" ry="20" style="fill:rgb(165, 127, 23);stroke:rgb(114, 88, 4);stroke-width:2" />
+                <!-- arms-->
+                <rect x="2" y="149" width="40" height="170" style="fill:#acd9f7;stroke-width:2; stroke:black;" transform = "rotate(4 20 150)"/>
+                <rect x="92" y="150" width="40" height="170" style="fill:#82c8f7;stroke-width:2;stroke:black" transform = "rotate(-10 100 100)"/> 
+            </svg>
+
+            <figcaption>Hlavna postava - Hal</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>

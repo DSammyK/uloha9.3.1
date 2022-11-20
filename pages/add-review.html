@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pridať recenziu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        /*<!-- #e59e6e-->**/
+
+        .container{
+            width: 75%;
+            margin: auto;
+            background-color: #f7f4f4;
+            padding: 40px 10px 90px;
+        }
+
+        .navbar{
+            width: 75%;
+            margin: auto;
+            height: 50px;
+            background-color: #ff9429;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-top: 30px;
+
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: 550;
+            color: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 0.5px 0px #fff;
+        }
+
+        .navbar ul{
+            display: flex;
+            margin-bottom: 20px;
+            padding-top: 15px;
+        }
+
+        .navbar li{
+            margin-right: 5px;
+        }
+
+        a:hover, .active{
+            background-color: #fff;
+            color: black;
+            border-radius: 20px;
+            text-shadow: 1px 1px 2px #888888;
+            box-shadow: 1px 1px 0.5px 0px black;
+        }
+
+        form{
+            width: 60%;
+            margin: auto;
+            background-color: #fff;
+            padding: 60px 50px 100px 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            box-shadow: 3px 8px 6px 8px #a1a1a1;
+        }
+
+        svg:nth-child(1){
+            justify-content: center;
+        }
+
+        #range{
+            width: 60%;
+        }
+
+        #submit{
+            width: 60%;
+            background-color: #e59e6e;
+            padding: 10px;
+            border-radius: 15px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+            border: 2px solid #d38a5a;
+        }
+
+        input, textarea{
+            width: 100%;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        .field1{
+            width: 100%;
+        }
+
+        .field2{
+            width: 40%;
+        }
+
+        .field3{
+            width: 46%;
+        }
+
+        #fName{
+            width: 100%;
+        }
+
+        .oddelenie{
+            margin-top: 50px;
+        }
+
+        input:focus, textarea:focus {
+        outline: none !important;
+        border:2px solid #e59e6e;
+        box-shadow: 0 0 7px #719ECE;
+        }
+        
+        label, p{
+            font-size: 18px;
+        }
+
+        input[type=range] {
+        height: 32px;
+        -webkit-appearance: none;
+        appearance: inherit;
+        margin: 10px 0;
+        margin-right: 50px;
+        width: 100%;
+        border: none;
+        }
+        input[type=range]:focus {
+        outline: none;
+        box-shadow: none;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 10px;
+        cursor: pointer;
+        box-shadow: 1px 1px 1px #E5B7B7;
+        background: #e59e6e;
+        border-radius: 5px;
+        border: 1px solid #E5B7B7;
+        }
+        input[type=range]::-webkit-slider-thumb {
+        box-shadow: 1px 1px 1px #000000;
+        border: 1px solid #E59E6E;
+        height: 24px;
+        width: 19px;
+        border-radius: 9px;
+        background: #FFFFFF;
+        cursor: pointer;
+        -webkit-appearance: none;
+        appearance: inherit;
+        margin-top: -8px;
+        }
+        input[type=range]:focus::-webkit-slider-runnable-track {
+        background: #e59e6e;
+        }
+        input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 10px;
+        cursor: pointer;
+        box-shadow: 1px 1px 1px #E5B7B7;
+        background: #e59e6e;
+        border-radius: 5px;
+        border: 1px solid #E5B7B7;
+        }
+        input[type=range]::-moz-range-thumb {
+        box-shadow: 1px 1px 1px #000000;
+        border: 1px solid #E59E6E;
+        height: 24px;
+        width: 19px;
+        border-radius: 9px;
+        background: #FFFFFF;
+        cursor: pointer;
+        }
+        input[type=range]::-ms-track {
+        width: 100%;
+        height: 10px;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+        }
+        input[type=range]::-ms-fill-lower {
+        background: #e59e6e;
+        border: 1px solid #E5B7B7;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px #E5B7B7;
+        }
+        input[type=range]::-ms-fill-upper {
+        background: #e59e6e;
+        border: 1px solid #E5B7B7;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px #E5B7B7;
+        }
+        input[type=range]::-ms-thumb {
+        margin-top: 1px;
+        box-shadow: 1px 1px 1px #000000;
+        border: 1px solid #E59E6E;
+        height: 24px;
+        width: 19px;
+        border-radius: 9px;
+        background: #FFFFFF;
+        cursor: pointer;
+        }
+        input[type=range]:focus::-ms-fill-lower {
+        background: #e59e6e;
+        }
+        input[type=range]:focus::-ms-fill-upper {
+        background: #e59e6e;
+        }
+
+        .svg{
+            width: 100%;
+            text-align: center;
+        }
+
+        .rangeChange{
+            width: 15%;
+            color: #e59e6e;
+            text-shadow: 1px 1px 2px black;
+
+        }
+
+        input[type=radio]{
+            width:auto;
+            accent-color: #e59e6e;
+        }
+        
+        .wordWrap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .logo{
+            position: relative;
+            margin: 40px 10px;
+
+        }
+
+        .logoSquare1{
+            width: 60px;
+            height: 60px;
+            border: 7px solid rgb(202, 22, 22);
+            position: absolute;
+            right: 15px;
+            z-index: 100;
+            
+        }
+
+        .logoSquare2{
+            width: 60px;
+            height: 60px;
+            border: 7px solid rgb(9, 129, 9);
+            position: absolute;
+            right: 0;
+            z-index: 0;
+        }
+
+        .logoSquare3{
+            width: 60px;
+            height: 60px;
+            border: 7px solid rgb(204, 132, 24);
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            z-index: 80;
+        }
+
+        .logoSquare4 {
+            width: 60px;
+            height: 60px;
+            border: 7px solid rgb(31, 21, 161);
+            position: absolute;
+            right: 0;
+            top: 15px;
+            z-index: 90;
+        }
+    
+    </style>
+
+
+</head>
+<body>
+     <div class="navbar">
+        <ul>
+            <li class="navbarItem"><a href="./../index.html"><i class="fa-solid fa-house"></i> Domov</a></li>
+            <li class="navbarItem"><a href="./ranking.html"><i class="fa-solid fa-stairs"></i> Rebríček</a></li>
+            <li class="navbarItem"><a class="active" href="./add-review.html"><i class="fa-solid fa-pen"></i> Pridať recenziu</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <form action="#">
+
+            <div class="svg">
+            <svg width="300" height="100">
+                <defs>
+                  <filter id="MyFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="300" height="120">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+                    <feOffset in="blur" dx="4" dy="4" result="offsetBlur" />
+                    <feSpecularLighting in="blur" surfaceScale="5" specularConstant=".75" specularExponent="20" lighting-color="#bbbbbb" result="specOut">
+                      <fePointLight x="-5000" y="-10000" z="20000" />
+                    </feSpecularLighting>
+                    <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+                    <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+                    <feMerge>
+                      <feMergeNode in="offsetBlur" />
+                      <feMergeNode in="litPaint" />
+                    </feMerge>
+                  </filter>
+                </defs>
+                <g filter="url(#MyFilter)">
+                  <path fill="none" stroke="#e59e6e" stroke-width="10" d="M50,90 C0,90 0,30 50,30 L250,30 C300,30 300,90 250,90 z" />
+                  <text fill="#e59e6e" stroke="black" font-size="45" font-family="Verdana" x="52" y="76">Recenzia</text>
+                </g>  
+              </svg>
+            </div>
+
+
+            <div class="field1 oddelenie">
+                <label for="fName" >Názov filmu* </label><br>
+                <input type="text" id="fName" name="fName" required placeholder="Eternals"><br>
+            </div>
+
+            <div class="field2 oddelenie" >
+                <label for="name" >Meno/nick </label><br>
+                <input type="text" id="name" name="name" placeholder="SammyD"><br>
+            </div>
+
+            <div class="field2 oddelenie">
+                <label for="email" >Email* </label><br>
+                <input type="email" id="email" name="email" required placeholder="sammyD@example.com"><br>
+            </div>
+
+            <div class="field1 oddelenie">
+                <label for="textarea" >Opíšte svoje hodnotenie filmu </label><br>
+                <textarea name="textarea" id="textarea" cols="60" rows="10" placeholder="Sem napíšte recenziu..."></textarea>
+            </div>
+
+            <div class="field1 oddelenie">
+                <label for="date" >Dátum, kedy bol film naposledny pozeraný</label><br>
+                <input type="date" id="date" name="date"><br>
+            </div>
+
+            <div class="field1 oddelenie">
+                <label for="range" >Celkove hodnotenie</label><br>
+                <input onmousemove="nastalaZmena(this)" onchange="nastalazmena(this)" type="range" id="range" name="range" step="10">
+                <input type="text" class="rangeChange" id="vybrateCislo" value="50">
+
+                <script>
+                    function nastalaZmena(x){
+                        let h1 = document.getElementById("vybrateCislo");
+                        console.log(x);
+                        h1.value = x.value;
+                    }
+                </script>
+            </div>
+
+            <div class="oddelenie field1 wordWrap">
+                <p class="field1"> Žáner filmu</p>
+                <div class="field3">
+                    <input type="radio" id="Akčné" name="genreOfFilm" value="Akčné filmy">
+                    <label for="Akčné">Akčné filmy</label><br>
+                    <input type="radio" id="Historické" name="genreOfFilm" value="Historické filmy">
+                    <label for="Historické">Historické filmy</label><br>
+                    <input type="radio" id="Dobrodružné" name="genreOfFilm" value="Dobrodružné filmy">
+                    <label for="Dobrodružné">Dobrodružné filmy</label>
+                </div>
+                <div class="field3">
+                    <input type="radio" id="Hororové" name="genreOfFilm" value="Hororové filmy">
+                    <label for="Hororové">Hororové filmy</label><br>
+                    <input type="radio" id="Psychologické" name="genreOfFilm" value="Psychologické filmy">
+                    <label for="Psychologické">Psychologické filmy</label><br>
+                    <input type="radio" id="Komédia" name="genreOfFilm" value="Komédia filmy">
+                    <label for="Komédia">Komédia</label>
+                </div>
+                <div class="field3">
+                    <input type="radio" id="iné" name="genreOfFilm" value="iné">
+                    <label for="iné">iné</label>
+                </div>
+
+            </div>
+
+            <div class="oddelenie svg">
+                <input type="submit" value="Odoslat spätnú väzbu" id="submit">
+            </div>
+        </form>
+
+        <div class="logo">
+            <div class="logoSquare1"></div>
+            <div class="logoSquare2"></div>
+            <div class="logoSquare3"></div>
+            <div class="logoSquare4"></div>
+        </div>
+
+    </div>
+</body>
+</html>

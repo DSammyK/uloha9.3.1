@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honotenie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <style>
+        body{
+            padding-top: 10px;
+            background-color:#98D7C2;  
+        }
+
+        .topFilm_desc{
+            margin-top: 0px;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto; 
+            padding-bottom: 70px;     
+            background-color: #fff;  
+        }
+        table{
+            background-color: #fff;
+        }
+
+        .topFilm{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        p{
+            width: 75%;
+            font-size: 20px;
+            padding: 0 20px 0 0;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+            margin-top: 0;
+            padding-top: 50px;
+            text-shadow: 1px 1px 2px #888888;
+        }
+        
+        table{
+            width: 90%;
+            margin: auto;
+            font-size: 20px;
+            border-collapse: collapse;
+        }
+
+        .alignRight{
+            text-align: right;
+        }
+        
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        thead{
+            background-color: #01987a;
+            height: 50px ;
+            font-size: 25px;
+        }
+
+        th,td{
+            padding-right: 6px;
+            height: 30px;
+            padding-left: 10px;
+        }
+        img{
+            width: 15%;
+            margin-left: 27px;
+            height: 20%;
+        }
+
+        .greenScore{
+            color: green;
+        }
+
+        table .grey{
+            background-color: #f3f3f3;
+        }
+
+        .navbar{
+            display: flex;
+            width: 70%;
+            margin: auto;
+        }
+
+        a{
+            border: 2px solid #167D7F;
+            border-top-left-radius: 40%;
+            border-top-right-radius: 40%;
+            background-color: #01987a;
+            color: #fff;
+            padding: 8px;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: 550;
+            border-bottom: #01987a;
+        }
+
+        a:hover, .active{
+            color: black;
+            background-color: #DDFFE7;
+        }
+
+        h1{
+            background-color: #fff;
+            margin-bottom: 0;
+            padding-bottom: 30px;
+            padding-top: 25px;
+            margin-top: 0;
+            text-shadow: 1px 1px 2px #888888;
+
+        }
+        .navbar ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            margin-bottom: 8px;
+        }
+        .navbar li {
+            margin-right: 5px;
+        }
+
+        ul{
+            padding-left: 0;
+        }
+    
+        .tooltip {
+        position: relative;
+        }
+
+        .tooltip .tooltipText {
+        visibility: hidden;
+        width: 360px;
+        height: 140px;
+        background: #2b2b2b;
+        box-shadow: -5px -5px 15px rgba(48, 54, 61, 0.2);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        line-height: 140px;
+        text-shadow: 2px 2px 10px #01987a ;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 40%;
+        margin-left: -60px;
+        }
+
+        .tooltip:hover .tooltipText {
+        visibility: visible;
+        cursor: pointer;
+        }
+
+        .tooltip:hover{
+            text-decoration: underline #01987a ;
+            cursor: pointer;
+        }
+
+        .tooltipText img{
+            width: fit-content;
+            height: 140px;
+            display: block;
+            float: left;
+            box-shadow: 5px 5px 20px rgba(243, 243, 243, 0.726);
+        }
+        
+
+    
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li class="navbarItem"><a href="./../index.html"><i class="fa-solid fa-house"></i> Domov</a></li>
+            <li class="navbarItem"><a class="active" href="./ranking.html"><i class="fa-solid fa-stairs"></i> Rebríček</a></li>
+            <li class="navbarItem"><a href="./add-review.html"><i class="fa-solid fa-pen"></i> Pridať recenziu</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+    <table>
+        <caption><h1>Rebríček najlepších filmov</h1></caption>
+        <thead>
+            <tr>
+                <th class="alignRight">Poradie</th>
+                <th>Názov filmu</th>
+                <th>Rok vydania</th>
+                <th>Hodnotenie v percentách</th>
+            </tr>
+        </thead>
+        <tr>
+            <td class="alignRight">1.</td>
+            <td class="tooltip">Vykoupení z věznice Shawshank <span class="tooltipText"><img src="./../images/TimRobbins.jpg" alt="">Tim Robbins</span></td>
+            <td>1994</td>
+            <td class="greenScore">95,3&percnt;</td>
+        </tr> 
+        <tr class="grey">
+            <td class="alignRight">2.</td>
+            <td class="tooltip">Forrest Gump <span class="tooltipText"><img src="./../images/TomHanks.jpg" alt="">Tom Hanks</span></td>
+            <td>1994</td>
+            <td class="greenScore">94,5&percnt;</td>
+        </tr>
+        <tr>
+            <td class="alignRight">3.</td>
+            <td class="tooltip">Zelená míle <span class="tooltipText"><img src="./../images/TomHanks2.jpg" alt="">Tom Hanks</span></td>
+            <td>1999</td>
+            <td class="greenScore">92,9&percnt;</td>
+        </tr>
+        <tr class="grey">
+            <td class="alignRight">4.</td>
+            <td class="tooltip">Sedm <span class="tooltipText"><img src="./../images/BradPitt.jpg" alt="">Brad Pitt</span></td>
+            <td>1995</td>
+            <td class="greenScore">92,4&percnt;</td>
+        </tr>
+        <tr>
+            <td class="alignRight">5.</td>
+            <td class="tooltip">Přelet nad kukaččím hnízdem <span class="tooltipText"><img src="./../images/JackNicholson.jpg" alt="">Jack Nicholson</span></td>
+            <td>1975</td>
+            <td class="greenScore">92,5&percnt;</td>
+        </tr>
+        <tr class="grey">
+            <td class="alignRight">6.</td>
+            <td>Schindlerův seznam</td>
+            <td>1993</td>
+            <td class="greenScore">92,3&percnt;</td>
+        </tr>
+        <tr>
+            <td class="alignRight">7.</td>
+            <td>Kmotr</td>
+            <td>1972</td>
+            <td>91,8&percnt;</td>
+        </tr>
+        <tr class="grey">
+            <td class="alignRight">8.</td>
+            <td>Dvanáct rozhněvaných mužu</td>
+            <td>1957</td>
+            <td>91,4&percnt;</td>
+        </tr>
+        <tr>
+            <td class="alignRight">9.</td>
+            <td>Nedotknutelní</td>
+            <td>2011</td>
+            <td>91,3&percnt;</td>
+        </tr>
+        <tr class="grey">
+            <td class="alignRight">10.</td>
+            <td>Pelíšky</td>
+            <td>1999</td>
+            <td>91,2&percnt;</td>
+        </tr>
+        <tr>
+            <td class="alignRight">11.</td>
+            <td>Terminátor 2: Den zúčtování</td>
+            <td>1991</td>
+            <td>90,9&percnt;</td>
+        </tr>
+        <tr class="grey">
+            <td class="alignRight">12.</td>
+            <td>Pulp Fiction: Historky z podsvětí</td>
+            <td>1994</td>
+            <td>90,7&percnt;</td>
+        </tr>
+        <tr>
+            <td class="alignRight">13.</td>
+            <td>Kmotr II</td>
+            <td>1974</td>
+            <td>90,8&percnt;</td>
+        </tr>
+        <tr class="grey">
+            <td class="alignRight">14.</td>
+            <td>Pán prstenů: Spoločenstvo Prstenu</td>
+            <td>2001</td>
+            <td>90,6&percnt;</td>
+        </tr>
+        <tr>
+            <td class="alignRight">15.</td>
+            <td>Pán prstenů: Společenstvo Prstenu</td>
+            <td>2003</td>
+            <td>90,5&percnt;</td>
+        </tr>
+        <tr class="grey">
+            <td class="alignRight">16.</td>
+            <td>Mlčení jehňátek</td>
+            <td>1991</td>
+            <td>90,5&percnt;</td>
+        </tr>
+        <tr>
+            <td class="alignRight">17.</td>
+            <td>Tenkrát na Západě</td>
+            <td>1968</td>
+            <td>90,5&percnt;</td>
+        </tr>
+        <tr class="grey">
+            <td class="alignRight">18.</td>
+            <td>Temný rytíř</td>
+            <td>2008</td>
+            <td>90,4&percnt;</td>
+        </tr>
+        <tr>
+            <td class="alignRight">19.</td>
+            <td>Gran Torino</td>
+            <td>2008</td>
+            <td>90,3&percnt;</td>
+        </tr>
+        <tr class="grey">
+            <td class="alignRight">20.</td>
+            <td>Matrix</td>
+            <td>1999</td>
+            <td>90,2&percnt;</td>
+        </tr>
+    </table>
+
+        <h2>Top film:Vykoupení z věznice Shawshank</h2>
+        <div class="topFilm">
+            <img src="https://img.telkac.zoznam.sk/data/images/broadcast/d7a1d365-3751-4517-bf6e-6cfc03477240.jpe" alt="Titulna fotka Vykoupení z věznice Shawshank">
+            <p class="topFilm_desc" style="display: inline-block;">Mladý bankéř <b>Andy Dufresne (Tim Robbins)</b> je v roce 1947 odsouzen za <b>vraždu své ženy a jejího milence</b>. 
+                Přesto, že tento čin popírá, čeká na něj dvojnásobný doživotní trest v obávané <b>věznici Shawshank</b>. Andy se snaží přizpůsobit vězeňskému životu a po 
+                krušných začátcích se sblíží s <b>Redem (Morgan Freeman)</b>, jenž si tu odpykává svůj doživotní trest už dvacet let. Sílu, jak přežít zdejší peklo, Andy nachází 
+                v tajném snu a skryté <b>naději na svobodu</b>...</p>
+
+                <audio src="./../podmaz.mp3" autoplay loop></audio>
+        </div>
+    </div>
+</body>
+</html>

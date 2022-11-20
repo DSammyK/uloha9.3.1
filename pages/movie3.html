@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Who</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #0a0b16;
+            color: #fff;
+        }
+
+        .container{
+            width: 75%;
+            margin: auto;
+            padding-bottom: 80px;
+        }
+
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-weight: 550;
+        }
+        
+        a:hover{
+            color: #ffc67e;
+            border-bottom: 2px solid #ffc67e;
+        }
+
+        .line{
+            margin-right: 20px;
+            border-left: 3px solid white;
+        }
+        span{
+            color: #ffc67e;
+        }
+        
+        h1,h2{
+            text-decoration: underline #ffc67e;
+        }
+        img {
+            height: 200px;
+            width: 27%;
+        }
+
+        img:nth-child(2){
+            width: 14%;
+        }
+        
+        .images{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+        }
+
+        ul{
+            margin-bottom: 50px;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .actor1{
+            color: #ffc67e;
+        }
+
+        .actor2{
+            color: rgb(216, 224, 105);
+        }
+
+        .actor3{
+            color: rgb(233, 151, 104);
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .navbar{
+            height: 30px;
+        }
+
+        .navbar li {
+            margin-right: 10px;
+        }
+
+        .video{
+            margin-top: 70px;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        
+        b{
+            color: #ffc67e;
+        }
+
+        .translation{
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        .flag {
+            height: 30px;
+            width: 30px;
+            position: relative;
+            top: 7px;
+        }
+
+        h1{
+            margin-bottom: 10px;
+        }
+
+        
+        .movieInfo{
+            text-align: center;
+        }
+
+        .movieInfo_black{
+            color: #ffc67e;
+            font-weight: bolder;
+        }
+        
+        .bold{
+            font-weight: bolder;
+            color: #ffc67e;
+        }
+        
+        .inline{
+            display: inline-block;
+            text-align: start;
+        }
+
+        .movieInfo p{
+            margin: 13px 0;
+        }
+
+        hr{
+            margin: 20px 0;
+        }
+
+        .series_flex{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: start;
+        }
+        
+        .series_flex__block{
+            width: 30%;
+        }
+
+        .interestingFacts_list{
+            list-style-type: disc;
+            text-align: start;
+        }
+
+        .interestingFacts_list li{
+            border-bottom: #ffc67e 1px solid;
+            padding: 15px;
+        }
+
+        .male::before{
+            font-family: FontAwesome;
+            content: "\f222";
+            margin-right: 10px;
+            color: rgb(100, 100, 230);
+            font-weight: bolder;
+        }
+
+        .female::before{
+            font-family: FontAwesome;
+            content: "\f221";
+            margin-right: 10px;
+            color: rgb(218, 100, 168);
+            font-weight: bolder;
+        }
+
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li class="line"></li>
+                <li class="navbarItem"><a href="./../index.html"><i class="fa-solid fa-house"></i> Domov</a></li>
+                <li class="line"></li>
+                <li class="navbarItem"><a href="./ranking.html"><i class="fa-solid fa-stairs"></i> Rebríček</a></li>
+                <li class="line"></li>
+                <li class="navbarItem"><a href="./add-review.html"><i class="fa-solid fa-pen"></i> Pridať recenziu</a></li>
+            </ul>
+        </div>
+
+        <h1 style="text-align: center;">Pán času</h1>
+        <h3 class="translation"><img class="flag" src="./../images/united-kingdom.png" alt=""> Doctor Who</h3>
+        <hr>
+        <h2 style="text-align: center;">Obsah filmu</h2>
+        <p>Kultovní seriál Velké Británie z 60. let je zpět a s ním i <b>Doktor v nových regeneracích.</b>
+            Opět se prostřednictvím své <b>časoprostorové Tardis</b> (s podobou policejní budky) i společníků vydává Doktor na úžasná dobrodružství napříč <b>prostorem a časem celého vesmíru</b> 
+            a snaží se vyřešit nejednu zapeklitou záhadu, jež mnohdy způsobí nemalé problémy. Zas a znova se setkává s mimozemšťany různorodých civilizací, kteří ne vždy 
+            jsou vůči němu přátelští. Ať už jsou to <b>Dálekové (jeho odvěcí nepřátelé), Sontarani, či jiní.</b> Má tak co dělat, aby sám vyvázl z malérů a zvládl situaci, 
+            aniž by přitom kdokoliv <b>přišel o život, což se bohužel ne vždy podaří.</b></p>
+        
+        <hr>
+
+        <section class="movieInfo">
+            <h2>Informácie o filme</h2>
+            <p class="bold">Sci-Fi / Fantasy / Dobrodružný / Drama
+            Velká Británie, (2005-2023), 129 h 24 min (Minutáž: 42-88 min)</p>
+            <div class="inline">
+                <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i>  Tvůrci:</span> Chris Chibnall, Russell T. Davies</p>
+                <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i> Režie:</span> James Hawes</p>
+                <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i>  Scénář:</span> Russell T. Davies</p>
+                <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i>  Kamera:</span> Ernest Vincze</p>
+                <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i>  Hudba:</span>  Murray Gold, Segun Akinola, Högni Egilsson</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="series movieInfo">
+            <h2>Série(14) / Epizody(161)</h2>
+            <div class="series_flex">
+                <div class="series_flex__block">
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 1 (2005) </span>13 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 2 (2006) </span>13 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 3 (2007) </span>13 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 4 (2008) </span>13 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 5 (2010) </span>13 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 6 (2011) </span>13 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 7 (2012) </span>14 epizod</p>
+                </div>
+                <div class="series_flex__block">
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 8 (2014) </span>12 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 9 (2015) </span>13 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 10 (2017) </span>12 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 11 (2018) </span>11 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 12 (2020) </span>11 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 13 (2021) </span>9 epizod</p>
+                    <p><span class="movieInfo_black"><i class="fa-solid fa-circle"></i> Série 14 (2023) </span>1 epizod</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <h2 style="text-align: center;">Herci</h2>
+
+        <div class="center">
+            <div class="inline">
+                <ul>
+                        <li class="actor1 male"><i class="fa-solid fa-masks-theater"></i> Peter Capaldi</li>
+                        <li class="actor2 male"><i class="fa-solid fa-masks-theater"></i> Matt Smith</li>
+                        <li class="actor3 female"><i class="fa-solid fa-masks-theater"></i> Billie Piper</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="images">
+            <img src="./../images/images.jpg" alt="">
+            <img src="./../images/images3.jpg" alt="">
+            <img src="./../images/images2.jpg" alt="">
+        </div>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HlHsgDShgSU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <hr>
+
+        <section class="interestingFacts movieInfo">
+            <h2>Zajímavosti</h2>
+
+            <ul class="interestingFacts_list">
+                <li><b>Peter Capaldi</b> se dozvěděl, že byl vybrán coby představitel dvanáctého doktora během natáčení seriálu <b>Tři mušketýři</b> (od r. 2014) v Praze. (Zdroj: Doctor Who (Live) - The Next Doctor 2013) (Roby)</li>
+                <li>V dôsledku viacerých paradoxov cestovania v čase, ktoré zažije, je <b>Clara Oswaldová (Jenna Coleman)</b> prvým spoločníkom Doktora, ktorému sa podarí získať fyzicky identických dvojníkov v rôznych obdobiach dejín (na Zemi aj iných planétach), stretnúť všetky <b>Doktorove minulé inkarnácie (podoby)</b> a nechtiac na chvíľu navštíviť Doktora v časoch jeho detstva na Gallifrey. Zaujímavý je pritom fakt, že sa Clare podarí stretnúť jednotlivé inkarnácie Doktora nielen prostredníctvom <b>svojich dvojníčok, ale aj osobne.</b> </li>
+                <li><b>Alex Kingston,</b> představitelka River Song, natočila své scény pro díl "Dobrý muž jde do války" za pouhé dva dny.</li>
+            </ul>
+        </section>
+
+
+</div> 
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Voice</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container{
+            width: 75%;
+            margin: auto;
+            background-color: #f7f7f7;
+            padding: 0px 10px 70px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: 550;
+            color: #000000;
+            background-color: #e2e2e2;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 1px 0.5px 0px #888888;
+        }
+
+        a:hover{
+            color: #ba0305;
+        }
+        
+        h2{
+            margin-bottom: 25px;
+        }
+
+        h1,h2{
+            text-shadow: 1px 1px 1.5px #8c0406;
+        }
+
+        h1,h2,b {
+            color: #ba0305;
+        }
+
+        img {
+            height: 200px;
+            width: 27%;
+        }
+
+        img:nth-child(2){
+            width: 12%;
+        }
+        
+        .images{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px;
+        }
+
+        ul{
+            margin-bottom: 50px;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .actor1{
+            color: #8c0406;
+        }
+
+        .actor2{
+            color: royalblue;
+        }
+
+        .actor3{
+            color: olivedrab;
+        }
+
+        .navbar ul{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .navbar li {
+            margin-left: 3px;
+        }
+        
+        .video{
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .translation{
+            text-align: center;
+            font-size: 20px;
+            color: #ba0305;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        .flag {
+            height: 30px;
+            width: 30px;
+            position: relative;
+            top: 5px;
+        }
+
+        h1{
+            margin-bottom: 4px;
+        }
+
+        .movieInfo{
+            text-align: center;
+        }
+
+        .movieInfo_black{
+            color: #8c0406;
+            font-weight: bolder;
+        }
+        
+        .bold{
+            font-weight: bolder;
+        }
+        
+        .inline{
+            display: inline-block;
+            text-align: start;
+        }
+
+        .movieInfo p{
+            margin: 13px 0;
+        }
+
+        .male::before{
+            font-family: FontAwesome;
+            content: "\f222";
+            margin-right: 10px;
+            color: rgb(100, 100, 230);
+            font-weight: bolder;
+        }
+
+        .female::before{
+            font-family: FontAwesome;
+            content: "\f221";
+            margin-right: 10px;
+            color: rgb(218, 100, 168);
+            font-weight: bolder;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar" style="justify-content: end; display: flex;">
+            <ul>
+                <li class="navbarItem"><a href="./../index.html"><i class="fa-solid fa-house"></i> Domov</a></li>
+                <li class="navbarItem"><a href="./ranking.html"><i class="fa-solid fa-stairs"></i> Rebríček</a></li>
+                <li class="navbarItem"><a href="./add-review.html"><i class="fa-solid fa-pen"></i> Pridať recenziu</a></li>
+            </ul>
+        </div>
+        <h1 style="text-align: center;">Koe no Katachi(Silent Voice)</h1>
+        <h3 class="translation"><img class="flag" src="./../images/japan.png" alt=""> 聲の形</h3>
+        <hr>
+        <h2 style="text-align: center;"><i class="fa-solid fa-video"></i> Obsah filmu</h2>
+        <p><b>Ishida Shouya</b> na základní škole šikanoval neslyšící dívku <b>Shouko Nishimiyu</b> až do okamžiku, kdy ji její rodiče přesunuli na jinou školu. Ishida si vůbec neuvědomuje špatnost svých činů, přijde o všechny kamarády a nakonec se sám stane <b>šikanovaným.</b> Všechno se ale změní na střední škole, kde se opět setkává s neslyšící Shoukou a snaží se napravit všechno zlé, co jí kdy udělal. Tím začíná jeho <b>cesta k nápravě.</b></p>
+        
+        <hr>
+
+        <section class="movieInfo">
+            <h2><i class="fa-solid fa-film"></i> Informácie o filme</h2>
+            <p class="bold">Animovaný / Drama / Psychologický / Romantický
+            Japonsko, 2016, 130 min (Alternativní 111 min)</p>
+            <div class="inline">
+            <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i> Režie:</span> Naoko Jamada</p>
+            <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i> Předlo</span> Jošitoki Óima (komiks)</p>
+            <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i>  Scénář</span>: Reiko Jošida</p>
+            <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i>  Kamera</span>: Kazuya Takao</p>
+            <p><span class="movieInfo_black"><i class="fa-solid fa-ticket"></i> Hudba:</span> Kensuke Ušio</p>
+            </div>
+        </section>
+
+        <hr>
+        <h2 style="text-align: center;"><i class="fa-solid fa-clapperboard"></i> Herci</h2>
+
+        <div class="center">
+        <div class="inline">
+            <ul>
+                    <li class="actor1 female"><i class="fa-solid fa-masks-theater"></i> Aoi Júki</li>
+                    <li class="actor2 female"><i class="fa-solid fa-masks-theater"></i> Maju Macuoka</li>
+                    <li class="actor3 male"><i class="fa-solid fa-masks-theater"></i> Tošijuki Tojonaga</li>         
+            </ul>
+        </div>
+    </div>
+        <hr>
+
+        <div class="images">
+            <img src="./../images/Koe2.jpg" alt="">
+            <img src="./../images/koe.jpg" alt="">
+            <img src="./../images/koe1.webp" alt="">
+        </div>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nfK6UgLra7g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
